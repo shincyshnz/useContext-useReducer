@@ -12,6 +12,7 @@ export const CounterContextProvider = ({ children }) => {
   const onDecrement = () => {
     count < 1 ? setCount(0) : setCount((prev) => (prev -= 1));
   };
+
   return (
     <CounterContext.Provider value={{ count, onIncrement, onDecrement }}>
       {children}

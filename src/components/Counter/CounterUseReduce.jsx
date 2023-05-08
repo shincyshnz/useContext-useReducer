@@ -2,7 +2,7 @@ import React, { useContext, useReducer, useState } from "react";
 import "./Counter.css";
 import { countReducer } from "./countReducer";
 
-export const CounterUseReducer = ({}) => {
+export const CounterUseReducer = () => {
   const [state, dispatch] = useReducer(countReducer, { count: 0 });
 
   return (
