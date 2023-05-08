@@ -3,17 +3,16 @@ import "./Counter.css";
 import { CounterContext } from "../../context/CounterContext";
 
 export const Counter = ({}) => {
-  const { count, onIncrement } = useContext(CounterContext);
-  console.log(count);
-  return (
-    <div>
-      <p className="danger">
-        Count <span>{count}</span>
-      </p>
+  const { count, onIncrement, onDecrement } = useContext(CounterContext);
 
-      {/* <button className="button" onClick={onDecrement}>
+  return (
+    <div className="counter-container">
+      <button className="button" onClick={onDecrement}>
         -
-      </button> */}
+      </button>{" "}
+      <span className="count">
+        <span>{count}</span>
+      </span>
       <button className="button" onClick={onIncrement}>
         +
       </button>

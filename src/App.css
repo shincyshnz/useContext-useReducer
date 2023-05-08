@@ -4,3 +4,17 @@
   padding: 2rem;
   text-align: center;
 }
+
+.box-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 150px;
+}
+
+.box-container .box {
+  height: 300px;
+  width: 300px;
+  padding: 20px;
+  border: solid 1px black;
+}

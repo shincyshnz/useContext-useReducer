@@ -12,10 +12,9 @@ export const CounterContextProvider = ({ children }) => {
   const onDecrement = () => {
     count < 1 ? setCount(0) : setCount((prev) => (prev -= 1));
   };
-
   return (
-    <CounterContextProvider value={{ count, onIncrement }}>
+    <CounterContext.Provider value={{ count, onIncrement, onDecrement }}>
       {children}
-    </CounterContextProvider>
+    </CounterContext.Provider>
   );
 };
