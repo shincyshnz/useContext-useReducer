@@ -1,5 +1,6 @@
 import "./App.css";
-import { Counter } from "./components/Counter/Counter";
+import { CounterCR } from "./components/Counter/CounterCR";
+import { CounterUseContext } from "./components/Counter/CounterUseContext";
 import { CounterUseReducer } from "./components/Counter/CounterUseReduce";
 
 function App() {
@@ -9,11 +10,15 @@ function App() {
       <div className="box-container">
         <div className="box">
           <h2>Context API </h2>
-          <Counter />
+          <CounterUseContext />
         </div>
         <div className="box">
           <h2>Use Reducer </h2>
           <CounterUseReducer />
+        </div>
+        <div className="box">
+          <h2>Use Context + Use Reducer </h2>
+          <CounterCR />
         </div>
       </div>
     </>

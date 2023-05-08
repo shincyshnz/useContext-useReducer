@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import "./Counter.css";
 import { CounterContext } from "../../context/CounterContext";
 
-export const Counter = ({}) => {
+export const CounterUseContext = ({}) => {
   const { count, onIncrement, onDecrement } = useContext(CounterContext);
 
   return (
